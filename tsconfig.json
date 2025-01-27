@@ -1,0 +1,35 @@
+{
+	"compilerOptions": {
+		"tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+		"target": "ES2020",
+		"useDefineForClassFields": true,
+		"lib": ["ES2020", "DOM", "DOM.Iterable"],
+		"module": "ESNext",
+		"skipLibCheck": true,
+
+		/* Bundler mode */
+		"moduleResolution": "bundler",
+		"allowImportingTsExtensions": true,
+		"isolatedModules": true,
+		"moduleDetection": "force",
+		"noEmit": true,
+		"jsx": "react-jsx",
+
+		"baseUrl": "./src",
+		"paths": {
+			"@api": ["api/*"],
+			"@assets": ["assets/*"],
+			"@components": ["components/*"],
+			"@pages": ["pages/*"],
+			"@root": ["*"],
+			"@store": ["store/*"],
+			"@styles": ["styles/*"],
+			"@types": ["types/*"],
+			"@util": ["util/*"]
+		},
+
+		/* Linting */
+		"strict": true
+	},
+	"include": ["src", "./prettier.config.js", "./eslint.config.js", "./vite.config.ts", "index.jsx"]
+}
