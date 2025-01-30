@@ -1,1 +1,9 @@
 **/node_modules/
+**/dist/
+.gitignore
+.gitattributes
+Dockerfile
+eslint.config.json
+LICENSE
+prettier.config.js
+README.md
